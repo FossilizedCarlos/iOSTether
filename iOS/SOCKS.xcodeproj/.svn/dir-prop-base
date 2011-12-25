@@ -1,0 +1,9 @@
+K 10
+svn:ignore
+V 73
+project.xcworkspace
+xcuserdata
+danielsachse.pbxuser
+danielsachse.mode1v3
+
+END
