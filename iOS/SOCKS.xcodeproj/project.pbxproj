@@ -40,7 +40,7 @@
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623EB0D0F72F000981E51 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* Tethering.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tethering.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* iOSTether.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTether.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		439F474A17FCBE04002EAB82 /* libTestFlight.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libTestFlight.a; sourceTree = "<group>"; };
 		439F474B17FCBE04002EAB82 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Tethering.app */,
+				1D6058910D05DD3D006BFB54 /* iOSTether.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,7 +233,7 @@
 			);
 			name = SOCKS;
 			productName = TrivialStreamTransfer;
-			productReference = 1D6058910D05DD3D006BFB54 /* Tethering.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* iOSTether.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -245,6 +245,11 @@
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = 64SE2VTT3X;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -321,7 +326,7 @@
 					"/Users/PetroEkos/Documents/SkyDrive/Fossilized\\ Bits/iOSTether/iOS/TestFlightSDK",
 				);
 				OTHER_CFLAGS = "-DDEBUG";
-				PRODUCT_NAME = Tethering;
+				PRODUCT_NAME = iOSTether;
 				PROVISIONING_PROFILE = "CFB90129-1D14-45E1-86A6-D0E6313E2A72";
 				SDKROOT = iphoneos;
 			};
@@ -341,7 +346,7 @@
 					"$(inherited)",
 					"/Users/PetroEkos/Documents/SkyDrive/Fossilized\\ Bits/iOSTether/iOS/TestFlightSDK",
 				);
-				PRODUCT_NAME = Tethering;
+				PRODUCT_NAME = iOSTether;
 				PROVISIONING_PROFILE = "CFB90129-1D14-45E1-86A6-D0E6313E2A72";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CFB90129-1D14-45E1-86A6-D0E6313E2A72";
 				SDKROOT = iphoneos;
