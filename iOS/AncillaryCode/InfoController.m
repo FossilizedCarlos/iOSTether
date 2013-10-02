@@ -61,7 +61,7 @@
 
 - (void)_loadInfoContent
 {
-	UIWebView * myWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 416)];
+	UIWebView * myWebView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
     NSString *  	infoFilePath;
     NSURLRequest *  request;
 
