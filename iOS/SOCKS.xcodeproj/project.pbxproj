@@ -14,6 +14,7 @@
 		439F475117FCBE04002EAB82 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 439F474B17FCBE04002EAB82 /* README.md */; };
 		439F475217FCBE04002EAB82 /* release_notes.md in Resources */ = {isa = PBXBuildFile; fileRef = 439F474C17FCBE04002EAB82 /* release_notes.md */; };
 		439F475417FCBE5A002EAB82 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 439F475317FCBE5A002EAB82 /* libz.dylib */; };
+		439F475617FCD5AC002EAB82 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 439F475517FCD5AC002EAB82 /* Default-568h@2x.png */; };
 		49720A8B127C1B37001873A0 /* ColorC.m in Sources */ = {isa = PBXBuildFile; fileRef = 49720A8A127C1B37001873A0 /* ColorC.m */; };
 		49847DDD12664F03001645B5 /* MOButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49847DDA12664F03001645B5 /* MOButton.m */; };
 		49847DDE12664F03001645B5 /* MOGlassButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49847DDC12664F03001645B5 /* MOGlassButton.m */; };
@@ -49,6 +50,7 @@
 		439F474E17FCBE04002EAB82 /* TestFlight+ManualSessions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TestFlight+ManualSessions.h"; sourceTree = "<group>"; };
 		439F474F17FCBE04002EAB82 /* TestFlight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestFlight.h; sourceTree = "<group>"; };
 		439F475317FCBE5A002EAB82 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		439F475517FCD5AC002EAB82 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		49720A89127C1B37001873A0 /* ColorC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorC.h; sourceTree = "<group>"; };
 		49720A8A127C1B37001873A0 /* ColorC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorC.m; sourceTree = "<group>"; };
 		49847DD912664F03001645B5 /* MOButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOButton.h; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				439F475517FCD5AC002EAB82 /* Default-568h@2x.png */,
 				439F474917FCBE04002EAB82 /* TestFlightSDK */,
 				54074CF1124126F10036116E /* Other Sources */,
 				54074CEF124126A70036116E /* View Controllers */,
@@ -278,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4D544090FAB45DC00630176 /* MainWindow.xib in Resources */,
+				439F475617FCD5AC002EAB82 /* Default-568h@2x.png in Resources */,
 				E4D5443B0FAB4B1600630176 /* Info.html in Resources */,
 				E4D544680FAB4F1A00630176 /* InfoView.xib in Resources */,
 				546335FE10DAB3BE00D3A3AE /* README in Resources */,
@@ -316,7 +320,8 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Carlos Barboza (X6LEMX5842)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SocksProxy_Prefix.pch;
 				INFOPLIST_FILE = Resources/Info.plist;
@@ -327,7 +332,7 @@
 				);
 				OTHER_CFLAGS = "-DDEBUG";
 				PRODUCT_NAME = iOSTether;
-				PROVISIONING_PROFILE = "CFB90129-1D14-45E1-86A6-D0E6313E2A72";
+				PROVISIONING_PROFILE = "6CF5B9E6-AF1B-448B-9E87-0F01D85F080B";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -336,8 +341,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = "";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Carlos Barboza (X6LEMX5842)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Carlos Barboza (X6LEMX5842)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SocksProxy_Prefix.pch;
 				INFOPLIST_FILE = Resources/Info.plist;
@@ -347,8 +352,8 @@
 					"/Users/PetroEkos/Documents/SkyDrive/Fossilized\\ Bits/iOSTether/iOS/TestFlightSDK",
 				);
 				PRODUCT_NAME = iOSTether;
-				PROVISIONING_PROFILE = "CFB90129-1D14-45E1-86A6-D0E6313E2A72";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "CFB90129-1D14-45E1-86A6-D0E6313E2A72";
+				PROVISIONING_PROFILE = "6CF5B9E6-AF1B-448B-9E87-0F01D85F080B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "6CF5B9E6-AF1B-448B-9E87-0F01D85F080B";
 				SDKROOT = iphoneos;
 			};
 			name = Release;
@@ -358,7 +363,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Carlos Barboza (X6LEMX5842)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_POSTPROCESSING = NO;
 				GCC_C_LANGUAGE_STANDARD = c99;
@@ -396,7 +401,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Carlos Barboza (X6LEMX5842)";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_POSTPROCESSING = YES;
 				GCC_C_LANGUAGE_STANDARD = c99;
