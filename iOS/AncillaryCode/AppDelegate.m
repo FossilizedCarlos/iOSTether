@@ -55,6 +55,8 @@
 #import "InfoController.h"
 #import "SocksProxyController.h"
 
+#import "TestFlight.h"
+
 /// background timer task constants
 // converts mins to seconds
 #define MINS(N) N * 60
@@ -82,6 +84,8 @@
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application
 {
+    [TestFlight takeOff:@"7307b6fc-1adc-49db-9ce0-ab2a02670fd6"];
+    
     #pragma unused(application)
     assert(self.window != nil);
     
