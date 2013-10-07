@@ -41,10 +41,10 @@
 
 
 - (void)dealloc {
-	self.normalBackgroundColor = nil;
-	self.highlightedBackgroundColor = nil;
-	self.disabledBackgroundColor = nil;
-
+    [self setNormalBackgroundColor:nil];
+    [self setHighlightedBackgroundColor:nil];
+    [self setDisabledBackgroundColor:nil];
+    
 	[super dealloc];
 }
 

@@ -182,7 +182,7 @@
 }
 
 
-- (void)_uploadData:(NSInteger)bytes;
+- (void)_uploadData:(NSInteger)bytes
 {
     self.uploadData += bytes/1024;
 	
@@ -484,7 +484,7 @@ static void AcceptCallback(CFSocketRef s, CFSocketCallBackType type, CFDataRef a
 	DLog(@"refreshing ip address",n);
 	
 	// refresh the IP address, just in case
-	self.currentAddress = [UIDevice localWiFiIPAddress];
+    [self setCurrentAddress:[UIDevice localWiFiIPAddress]];
 	[self refreshProxyTable];
 }
 

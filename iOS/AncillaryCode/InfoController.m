@@ -72,7 +72,7 @@
     assert(request != nil);
     
 	[myWebView loadRequest:request];
-	myWebView.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
+    [myWebView setBackgroundColor:[UIColor scrollViewTexturedBackgroundColor]];
 	
 	[self.view addSubview:myWebView];
 	
